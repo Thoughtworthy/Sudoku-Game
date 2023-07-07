@@ -44,12 +44,12 @@
             // 
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(363, 401);
+            this.panel1.Size = new System.Drawing.Size(831, 729);
             this.panel1.TabIndex = 0;
             // 
             // CheckInput
             // 
-            this.CheckInput.Location = new System.Drawing.Point(425, 27);
+            this.CheckInput.Location = new System.Drawing.Point(906, 42);
             this.CheckInput.Name = "CheckInput";
             this.CheckInput.Size = new System.Drawing.Size(168, 49);
             this.CheckInput.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             // ClearInput
             // 
-            this.ClearInput.Location = new System.Drawing.Point(425, 103);
+            this.ClearInput.Location = new System.Drawing.Point(906, 118);
             this.ClearInput.Name = "ClearInput";
             this.ClearInput.Size = new System.Drawing.Size(168, 30);
             this.ClearInput.TabIndex = 2;
@@ -70,7 +70,7 @@
             // beginnerLevel
             // 
             this.beginnerLevel.AutoSize = true;
-            this.beginnerLevel.Location = new System.Drawing.Point(445, 221);
+            this.beginnerLevel.Location = new System.Drawing.Point(926, 236);
             this.beginnerLevel.Name = "beginnerLevel";
             this.beginnerLevel.Size = new System.Drawing.Size(67, 17);
             this.beginnerLevel.TabIndex = 3;
@@ -81,7 +81,7 @@
             // IntermediateLevel
             // 
             this.IntermediateLevel.AutoSize = true;
-            this.IntermediateLevel.Location = new System.Drawing.Point(445, 244);
+            this.IntermediateLevel.Location = new System.Drawing.Point(926, 259);
             this.IntermediateLevel.Name = "IntermediateLevel";
             this.IntermediateLevel.Size = new System.Drawing.Size(85, 17);
             this.IntermediateLevel.TabIndex = 3;
@@ -92,7 +92,7 @@
             // AdvancedLevel
             // 
             this.AdvancedLevel.AutoSize = true;
-            this.AdvancedLevel.Location = new System.Drawing.Point(445, 267);
+            this.AdvancedLevel.Location = new System.Drawing.Point(926, 282);
             this.AdvancedLevel.Name = "AdvancedLevel";
             this.AdvancedLevel.Size = new System.Drawing.Size(73, 17);
             this.AdvancedLevel.TabIndex = 3;
@@ -103,7 +103,7 @@
             // Level
             // 
             this.Level.AutoSize = true;
-            this.Level.Location = new System.Drawing.Point(445, 202);
+            this.Level.Location = new System.Drawing.Point(926, 217);
             this.Level.Name = "Level";
             this.Level.Size = new System.Drawing.Size(33, 13);
             this.Level.TabIndex = 4;
@@ -111,7 +111,7 @@
             // 
             // NewGame
             // 
-            this.NewGame.Location = new System.Drawing.Point(425, 290);
+            this.NewGame.Location = new System.Drawing.Point(906, 305);
             this.NewGame.Name = "NewGame";
             this.NewGame.Size = new System.Drawing.Size(134, 40);
             this.NewGame.TabIndex = 5;
@@ -122,7 +122,7 @@
             // Wins
             // 
             this.Wins.AutoSize = true;
-            this.Wins.Location = new System.Drawing.Point(422, 400);
+            this.Wins.Location = new System.Drawing.Point(903, 415);
             this.Wins.Name = "Wins";
             this.Wins.Size = new System.Drawing.Size(67, 13);
             this.Wins.TabIndex = 6;
@@ -131,7 +131,7 @@
             // Losses
             // 
             this.Losses.AutoSize = true;
-            this.Losses.Location = new System.Drawing.Point(422, 371);
+            this.Losses.Location = new System.Drawing.Point(903, 386);
             this.Losses.Name = "Losses";
             this.Losses.Size = new System.Drawing.Size(76, 13);
             this.Losses.TabIndex = 7;
@@ -141,7 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 475);
+            this.ClientSize = new System.Drawing.Size(1086, 753);
             this.Controls.Add(this.Losses);
             this.Controls.Add(this.Wins);
             this.Controls.Add(this.NewGame);

@@ -31,9 +31,9 @@ namespace Sudoku_Game
                     // Create 81 cells for with styles and locations based on the index
                     cells[i, j] = new SudokuCell();
                     cells[i, j].Font = new Font(SystemFonts.DefaultFont.FontFamily, 20);
-                    cells[i, j].Size = new Size(40, 40);
-                    cells[i, j].ForeColor = SystemColors.ControlDarkDark;
-                    cells[i, j].Location = new Point(i * 40, j * 40);
+                    cells[i, j].Size = new Size(80, 80);
+                    cells[i, j].ForeColor = Color.Black;
+                    cells[i, j].Location = new Point(i * 80, j * 80);
                     cells[i, j].BackColor = ((i / 3) + (j / 3)) % 2 == 0 ? SystemColors.Control : Color.LightGray;
                     cells[i, j].FlatStyle = FlatStyle.Flat;
                     cells[i, j].FlatAppearance.BorderColor = Color.Black;
@@ -67,7 +67,7 @@ namespace Sudoku_Game
                 else
                     cell.Text = value.ToString();
 
-                cell.ForeColor = SystemColors.ControlDarkDark;
+                cell.ForeColor = Color.Black;
             }
         }
         private void startNewGame()
@@ -81,7 +81,7 @@ namespace Sudoku_Game
             if (beginnerLevel.Checked)
             {
                 tryes = 3;
-                hintsCount = 45;
+                hintsCount = 50;
             }
             else if (IntermediateLevel.Checked)
             {
@@ -97,7 +97,7 @@ namespace Sudoku_Game
             {
                 tryes = 3;
                 beginnerLevel.Checked = true;
-                hintsCount = 45;
+                hintsCount = 50;
             }
 
             showRandomValuesHints(hintsCount);
@@ -114,7 +114,7 @@ namespace Sudoku_Game
                 // Style the hint cells differently and
                 // lock the cell so that player can't edit the value
                 cells[rX, rY].Text = cells[rX, rY].Value.ToString();
-                cells[rX, rY].ForeColor = Color.Green;
+                cells[rX, rY].ForeColor = Color.Black;
                 cells[rX, rY].IsLocked = true;
             }
         }
@@ -226,16 +226,19 @@ namespace Sudoku_Game
                 if (tryes == 0)
                 {
                    // LoggInfo.LoggInfo.FillInfo(int.Parse(Losses.Text)+ 1, int.Parse(Wins.Text));
-                    Losses.Text = $"Total Losses - {LoggInfo.LoggInfo.GetTotalLost().ToString()}";
+                    //Losses.Text = $"Total Losses - {LoggInfo.LoggInfo.GetTotalLost().ToString()}";
 
                     startNewGame();
                 }
             }
             else
             {
-                LoggInfo.LoggInfo.FillInfo(int.Parse(Losses.Text), int.Parse(Wins.Text) + 1);
+                //LoggInfo.LoggInfo.FillInfo(int.Parse(Losses.Text), int.Parse(Wins.Text) + 1);
+                Console.Beep();
+                Console.Beep();
+                Console.Beep();
                 MessageBox.Show("You Wins");
-                Wins.Text = $"Total Wins - {LoggInfo.LoggInfo.GetTotalWins().ToString()}";
+               // Wins.Text = $"Total Wins - {LoggInfo.LoggInfo.GetTotalWins().ToString()}";
             }
         }
 
